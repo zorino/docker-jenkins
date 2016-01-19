@@ -48,4 +48,4 @@ ENTRYPOINT ["/usr/local/bin/jenkins.sh"]
 COPY plugins.sh /usr/local/bin/plugins.sh
 
 # Maintener
-MAINTAINER Maxime Deraspe maxime@deraspe.net
+MAINTAINER zorino <maximilien1er@gmail.com>
