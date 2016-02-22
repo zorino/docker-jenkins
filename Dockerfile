@@ -1,6 +1,9 @@
 # Linux OS
 FROM centos
 
+# Maintainer
+MAINTAINER zorino <maximilien1er@gmail.com>
+
 # Install Dependency
 RUN yum install -y java gcc-c++ make openmpi openmpi-devel zlib zlib-devel bzip2-libs bzip2-devel wget git curl zip && rm -rf /var/lib/apt/lists/*
 
@@ -46,6 +49,3 @@ ENTRYPOINT ["/usr/local/bin/jenkins.sh"]
 
 # from a derived Dockerfile, can use `RUN plugin.sh active.txt` to setup /usr/share/jenkins/ref/plugins from a support bundle
 COPY plugins.sh /usr/local/bin/plugins.sh
-
-# Maintener
-MAINTAINER zorino <maximilien1er@gmail.com>
